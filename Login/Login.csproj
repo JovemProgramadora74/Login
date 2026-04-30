@@ -10,6 +10,9 @@
 
     <ItemGroup>
         <None Remove="Images\background.jpg"/>
+    </ItemGroup>
+
+    <ItemGroup>
         <Resource Include="Images\background.jpg"/>
     </ItemGroup>
 

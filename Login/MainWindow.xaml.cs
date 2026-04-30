@@ -15,21 +15,30 @@ public partial class MainWindow : Window
 
     private void BotaoLogin(object sender, RoutedEventArgs e)
     {
-        // Inicio BotaoLogin
         var usuarioDigitado = tbUsuario.Text;
         var senhaDigitada = tbSenha.Text;
 
-        if (usuarioDigitado == USUARIO_PADRAO && senhaDigitada == SENHA_PADRAO)
+        if (string.IsNullOrWhiteSpace(usuarioDigitado) || string.IsNullOrWhiteSpace(senhaDigitada))
+        {
+            MessageBox.Show("Usuario e senha precisam ser informados", "Informação pendente");
+            return;
+        }
+
+        if (usuarioDigitado != USUARIO_PADRAO || senhaDigitada != SENHA_PADRAO)
         {
             // True
-            MessageBox.Show("Boas vindas, Admin");
-            var novaJanela = new Painel();
-            novaJanela.Show();
-        }
-        else
-        {
-            // False
             MessageBox.Show("Usuario e/ou senha estão errados", "Erro");
+            return;
         }
+
+        MessageBox.Show("Boas vindas, Admin");
+        var novaJanela = new Painel(usuarioDigitado);
+        novaJanela.Show();
     } // Fim BotaoLogin
+
+    private void BotaoCadastro(object sender, RoutedEventArgs e)
+    {
+        var janelaCadastro = new Cadastro(); // Aqui ele constroi a janela na memoria RAM
+        janelaCadastro.Show(); // Exibe a janela no monitor
+    }
 } // Fim Main

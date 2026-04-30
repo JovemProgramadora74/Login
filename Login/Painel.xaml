@@ -6,6 +6,9 @@
         mc:Ignorable="d"
         Title="Painel" Height="450" Width="800">
     <Grid>
-        <Image Source="Images/background.jpg" />
+        <StackPanel>
+            <TextBlock x:Name="displayUsuario" FontSize="20" />
+            <Image Source="Images/background.jpg" />
+        </StackPanel>
     </Grid>
 </Window>
