@@ -6,15 +6,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#264ECA">
-        <StackPanel Margin="20">
-            <TextBlock FontFamily="Consolas" Width="300" Foreground="White" Text="Nome de Usuário" />
-            <TextBox Width="300" Height="45" FontSize="16" x:Name="tbUsuario" />
+        <StackPanel VerticalAlignment="Center" Margin="20">
+            <TextBlock Width="300" Foreground="White" Text="Nome de Usuário" />
+            <Border CornerRadius="10" Width="300" Height="45" Background="White" Margin="0,5,0,15">
+                <TextBox FontSize="16" x:Name="tbUsuario" Background="Transparent" BorderThickness="0"
+                         VerticalContentAlignment="Center" />
+            </Border>
 
             <TextBlock Width="300" Foreground="White" Text="Senha" />
-            <TextBox Margin="0 0 0 40" Width="300" Height="45" FontSize="16" x:Name="tbSenha" />
+            <Border CornerRadius="10" Width="300" Height="45" Background="White" Margin="0,5,0,15">
+                <TextBox FontSize="16" x:Name="tbSenha" Background="Transparent" BorderThickness="0" />
+            </Border>
 
-            <Button Background="White" Foreground="#2148C0" Width="300" Height="45" Content="Fazer login" Click="BotaoLogin" />
-            <Button Background="White" Foreground="#2148C0" Width="300" Height="45" Content="Cadastre-se" Click="BotaoCadastro" />
+            <Button Background="White" Foreground="#2148C0" Width="300" Height="45" Content="Fazer login"
+                    Click="BotaoLogin" Margin="8" />
+            <Button Background="White" Foreground="#2148C0" Width="300" Height="45" Content="Cadastre-se"
+                    Click="BotaoCadastro" Margin="8" />
         </StackPanel>
     </Grid>
 </Window>
