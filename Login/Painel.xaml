@@ -6,9 +6,14 @@
         mc:Ignorable="d"
         Title="Painel" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <TextBlock x:Name="displayUsuario" FontSize="20" />
-            <Image Source="Images/background.jpg" />
+        <StackPanel Width="400" HorizontalAlignment="Left">
+            <TextBlock FontSize="20" Text="Selecione a estudante:" />
+            <TextBox Height="30" x:Name="tbEstudanteNome" />
+            <Button Content="Buscar Imagem" />
+        </StackPanel>
+        
+        <StackPanel Width="400" HorizontalAlignment="Right">
+            <Image x:Name="imagemAluna" />
         </StackPanel>
     </Grid>
 </Window>
