@@ -9,7 +9,7 @@
         <StackPanel Width="400" HorizontalAlignment="Left">
             <TextBlock FontSize="20" Text="Selecione a estudante:" />
             <TextBox Height="30" x:Name="tbEstudanteNome" />
-            <Button Content="Buscar Imagem" />
+            <Button Content="Buscar Imagem" Click="BotaoBuscarImagem" />
         </StackPanel>
         
         <StackPanel Width="400" HorizontalAlignment="Right">

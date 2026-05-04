@@ -14,6 +14,10 @@
 
     <ItemGroup>
         <Resource Include="Images\background.jpg"/>
+        <None Remove="Images\yatra.jpg" />
+        <Resource Include="Images\yatra.jpg" />
+        <None Remove="Images\padrao.webp" />
+        <Resource Include="Images\padrao.webp" />
     </ItemGroup>
 
 </Project>

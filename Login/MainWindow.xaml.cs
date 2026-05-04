@@ -32,7 +32,7 @@ public partial class MainWindow : Window
         }
 
         MessageBox.Show("Boas vindas, Admin");
-        var novaJanela = new Painel(usuarioDigitado);
+        var novaJanela = new Painel();
         novaJanela.Show();
     } // Fim BotaoLogin
 
