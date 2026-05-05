@@ -27,7 +27,8 @@
                          VerticalContentAlignment="Center" />
             </Border>
 
-            <Button Content="Cadastrar" Background="White" Foreground="#2148C0" Width="300" Height="45" Margin="8" Click="BotaoCadastrar" />
+            <Button Content="Cadastrar" Background="White" Foreground="#2148C0" Width="300" Height="45" Margin="8"
+                    Click="BotaoCadastrar" />
         </StackPanel>
     </Grid>
 </Window>
